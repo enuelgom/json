@@ -16,18 +16,20 @@ const resolvers = {
                     try {
                         obj = JSON.parse(data); //now it an object
                             obj.preguntas.push({
-                        pregunta: args["pregunta"], respuestas:{
+                            tema:args["tema"],
+                            dificultad:args["dificultad"],
+                            pregunta: args["pregunta"], respuestas:{
                             rc:{
                                 r: args["rc"],
-                                d: args["Drc"]
+                                d: args["drc"]
                             },
                             r1:{
                                 r: args["r1"],
-                                d: args["Dr1"]
+                                d: args["dr1"]
                             },
                             r2:{
                                 r: args["r2"],
-                                d: args["Dr2"]
+                                d: args["dr2"]
                             }
                         }});
                         var json = JSON.stringify(obj);
@@ -40,18 +42,20 @@ const resolvers = {
                         return "hecho"; 
                     } catch (error) {
                         obj.preguntas.push({
-                        pregunta: args["pregunta"], respuestas:{
+                            tema:args["tema"],
+                            dificultad:args["dificultad"],
+                            pregunta: args["pregunta"], respuestas:{
                             rc:{
                                 r: args["rc"],
-                                d: args["Drc"]
+                                d: args["drc"]
                             },
                             r1:{
                                 r: args["r1"],
-                                d: args["Dr1"]
+                                d: args["dr1"]
                             },
                             r2:{
                                 r: args["r2"],
-                                d: args["Dr2"]
+                                d: args["dr2"]
                             }
                         }});
                         var json = JSON.stringify(obj);

@@ -5,13 +5,15 @@ type Query {
 
 type Mutation {
     pregunta(
+        tema: String,
         pregunta: String,
         rc: String,
-        Drc: String,
+        drc: String,
         r1: String,
-        Dr1: String,
+        dr1: String,
         r2: String,
-        Dr2: String,
+        dr2: String,
+        dificultad: String
     ): String
 }
 `

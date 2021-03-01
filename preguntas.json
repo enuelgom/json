@@ -1,1 +1,23 @@
-{"preguntas":[{"pregunta":"p","respuestas":{"rc":{"r":"123","d":"123"},"r1":{"r":"123","d":"123"},"r2":{"r":"123","d":"123"}}},{"pregunta":"p","respuestas":{"rc":{"r":"es la respuesta correcta"},"r1":{"r":"definicion de una respuesta incorrecta"},"r2":{"r":"definicion de la otra respuesta incorrecta"}}},{"pregunta":"p","respuestas":{"rc":{"r":"rc","d":"es la respuesta correcta"},"r1":{"r":"es una respuesta incorrecta","d":"definicion de una respuesta incorrecta"},"r2":{"r":"es otro respuesta incorrecta","d":"definicion de la otra respuesta incorrecta"}}}]}
+{
+    "preguntas": [
+        {
+            "tema": "Sinonimos",
+            "dificultad": "1",
+            "pregunta": "¿cual es el sinonimo de ayudar?",
+            "respuestas": {
+                "rc": {
+                    "r": "apoyar",
+                    "d": "descripcion de apoyar"
+                },
+                "r1": {
+                    "r": "encontrar",
+                    "d": "descripcion de encontrar"
+                },
+                "r2": {
+                    "r": "disponer",
+                    "d": "descripcion de disponer"
+                }
+            }
+        }
+    ]
+}
