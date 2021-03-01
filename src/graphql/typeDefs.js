@@ -1,27 +1,18 @@
 let typedefs = `
-type A{
-    nombre: String
-}
-
-type R{
-        pregunta: String,
-        rc: String,
-        r1: String,
-        r2: String
-}
-
 type Query {
-    a: [A]
-},
+    a: String
+}
 
 type Mutation {
     pregunta(
         pregunta: String,
         rc: String,
+        Drc: String,
         r1: String,
+        Dr1: String,
         r2: String,
-
-    ): R
+        Dr2: String,
+    ): String
 }
 `
 
