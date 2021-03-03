@@ -15,6 +15,14 @@ type Mutation {
         dr2: String,
         dificultad: String
     ): String
+
+    vf(
+        tema: String,
+        pregunta: String,
+        rc: String,
+        dificultad: String
+        descripcion: String
+    ): String
 }
 `
 

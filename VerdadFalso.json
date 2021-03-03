@@ -1,0 +1,11 @@
+{
+    "preguntas": [
+        {
+            "tema": "pregunta",
+            "dificultad": "1",
+            "pregunta": "es verdad",
+            "rc": "si lo es",
+            "descripcion": "que dice que es la verdad"
+        }
+    ]
+}
