@@ -1,11 +1,1 @@
-{
-    "preguntas": [
-        {
-            "tema": "pregunta",
-            "dificultad": "1",
-            "pregunta": "es verdad",
-            "rc": "si lo es",
-            "descripcion": "que dice que es la verdad"
-        }
-    ]
-}
+{"preguntas":[{"tema":"pregunta","dificultad":"1","pregunta":"es verdad","rc":"si lo es","descripcion":"que dice que es la verdad"},{"tema":"Ortografia","dificultad":"Bajo","pregunta":"6554654654","rc":"Verdadero","descripcion":"76576576"}]}
