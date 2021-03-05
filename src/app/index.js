@@ -9,7 +9,7 @@ import bodyParser from "body-parser"
 
 const HOST = "localhost";
 //const HOST = "192.168.1.228";
-const PORT = "3000";
+const PORT = "4000";
 const app = express();
 
 
@@ -47,9 +47,9 @@ server.applyMiddleware({ app });
 const httpserver = http.createServer(app);
 server.installSubscriptionHandlers(httpserver)
 
-// httpserver.listen({ port: PORT, host: HOST }, () => {
-//     console.log(`server ready http://${HOST}:${PORT}${server.graphqlPath}`);
-// });
+httpserver.listen({ port: PORT, host: HOST }, () => {
+    console.log(`server ready http://${HOST}:${PORT}${server.graphqlPath}`);
+});
 // httpserver.listen({ port: process.env.PORT}, (url)=> {
 //     console.log(`🚀 Server ready at ${url}:${server.graphqlPath}`);
 //   });
@@ -57,10 +57,10 @@ server.installSubscriptionHandlers(httpserver)
 //     console.log(`🚀 Server ready at ${url}`);
 //   });
 
-app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
+// app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
 
-const port = process.env.PORT || "4000";
+// const port = process.env.PORT || "4000";
 
-app.listen(port);
+// app.listen(port);
 
-console.log(`🚀 Server ready at http://localhost:4000/graphql`);
+// console.log(`🚀 Server ready at http://localhost:4000/graphql`);
