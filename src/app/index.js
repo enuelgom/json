@@ -50,9 +50,9 @@ server.installSubscriptionHandlers(httpserver)
 // httpserver.listen({ port: PORT, host: HOST }, () => {
 //     console.log(`server ready http://${HOST}:${PORT}${server.graphqlPath}`);
 // });
-// httpserver.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
-//     console.log(`🚀 Server ready at ${url}:${server.graphqlPath}`);
-//   });
-server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`);
+httpserver.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}:${server.graphqlPath}`);
   });
+// server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+//     console.log(`🚀 Server ready at ${url}`);
+//   });
