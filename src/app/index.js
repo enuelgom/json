@@ -47,15 +47,15 @@ server.applyMiddleware({ app });
 const httpserver = http.createServer(app);
 server.installSubscriptionHandlers(httpserver)
 
-httpserver.listen({ port: PORT, host: HOST }, () => {
-    console.log(`server ready http://${HOST}:${PORT}${server.graphqlPath}`);
-});
+// httpserver.listen({ port: PORT, host: HOST }, () => {
+//     console.log(`server ready http://${HOST}:${PORT}${server.graphqlPath}`);
+// });
 // httpserver.listen({ port: process.env.PORT}, (url)=> {
 //     console.log(`🚀 Server ready at ${url}:${server.graphqlPath}`);
 //   });
-// httpserver.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
-//     console.log(`🚀 Server ready at ${url}`);
-//   });
+serve.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`);
+  });
 
 // app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
 
